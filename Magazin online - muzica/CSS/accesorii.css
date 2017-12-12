@@ -1,0 +1,19 @@
+main div.content div.item {
+    
+    border-bottom: 1px solid black;
+}
+
+main div.content div.item:last-child {
+    
+    border-bottom: none;
+}
+
+main div.row:nth-child(2) > div:first-child {
+    
+    display: none;
+}
+
+main div.row:nth-child(2) > div:last-child {
+    
+    display: none;
+}

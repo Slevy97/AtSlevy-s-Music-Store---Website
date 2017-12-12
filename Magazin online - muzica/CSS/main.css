@@ -1,0 +1,300 @@
+html {
+	/* Paul Irish Code*/
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+    
+     font-family: "Times New Roman", Times, serif;
+}
+
+html * {
+    
+	padding: 0;
+	outline: 0;
+	border: 0;
+	margin: 0;
+}
+
+.row::after {
+    
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    width: 100%;
+}
+
+/** Header CSS **/
+
+header {
+    
+    background-color: #333;
+    color: white;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+header div.row{
+    
+    display: none;
+}
+
+header h1 a {
+    
+    color: white;
+    text-decoration: none;
+}
+
+header h1 a:hover {
+    
+    color: #B22222;
+}
+
+header div.row img {
+    
+    width: 75px;
+    height: 75px;
+    float: left;	
+}
+
+/** Dropdown menu CSS **/
+
+#nav_wrap {
+    
+    margin-top: 5px;
+}
+
+ul.drop_menu {
+    
+    width: 100%;
+}
+
+ul.drop_menu li {
+    
+    display: block;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+    /** **/
+    height: 40px;
+}
+
+ul.drop_menu li.menu-item {
+    display: none;
+}
+
+ul.drop_menu > li {
+
+    float: left;
+    width: 100%;
+}
+
+ul.drop_menu > li > a {
+    
+    font-size: 1.1rem;
+}
+
+ul.drop_submenu > li {
+    
+    width: 100%;
+    height: 100%;
+}
+
+ul.drop_submenu > li > a {
+    
+    font-size: 0.8rem;
+}
+
+ul.drop_menu a {
+    
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 40px;
+    letter-spacing: 2px;
+    
+    -webkit-transition: color 150ms ease-out;
+    -moz-transition: color 150ms ease-out;
+    -ms-transition: color 150ms ease-out;
+    -o-transition: color 150ms ease-out;
+    transition: color 150ms ease-out;
+}
+
+ul.drop_submenu {
+    
+    position: relative;
+    top: 0px;
+}
+
+ul.drop_menu > li:hover {
+    
+    overflow: visible;
+}
+
+ul.drop_menu > li:hover > a {
+    
+    border-bottom: 1px solid black;
+}
+
+ul.drop_menu > li:nth-child(2):hover > a {
+    
+     border-bottom: none;
+}
+
+ul.drop_menu > li:nth-child(5):hover > a {
+    
+    border-bottom: none;
+}
+
+
+ul.drop_menu > li:hover > a:not(.active) {
+    
+    color: red;
+}
+
+ul.drop_submenu > li:hover > a{
+    
+    color: red;
+}
+
+.active {
+    
+    background-color: #B22222;
+}
+
+ul.drop_submenu > li {
+    
+    border-bottom: 1px solid black;
+}
+
+ul.drop_submenu > li:last-child {
+    
+    border-bottom: none;
+}
+
+/* Main CSS **/
+
+.helper {
+    
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+main #title {
+    
+    text-align: center;
+}
+
+main {
+    
+    padding-top: 40px;
+}
+
+/** Footer CSS **/
+
+footer {
+    
+    background-color: #333;
+    color: white;
+}
+
+/** Footer contact **/
+
+footer #contact {
+    
+    padding-left: 35px;
+}
+
+footer #contact h3 {
+    
+    margin-top: 10px;
+}
+
+footer #contact ul {
+    
+    list-style-type: none;
+    font-size: 1.1rem;
+}
+
+footer #contact ul li {
+    
+    margin-top: 10px;
+}
+
+footer #contact ul li span{
+    
+    display: inline-block;
+    width: 30px;
+}
+
+footer #contact ul li img {
+    
+    display: block;
+    margin: auto;
+}
+
+footer #contact a {
+    
+    color: white;
+    text-decoration: none;
+}
+
+footer #contact a:hover {
+    
+    color: red;
+}
+
+/** Footer orar **/
+
+footer #orar_magazin {
+    
+    padding-top: 50px;
+    font-size: 1.1rem;    
+    padding-left: 35px;
+}
+
+footer #orar_magazin ul {
+    
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+footer #orar_magazin ul li {
+    
+    margin-top: 10px;
+}
+
+/** Footer media **/
+
+footer #media {
+    
+    padding-top: 25px;
+}
+
+footer #media h2 {
+    
+    font-size: 1.2rem;
+    text-indent: 1.2rem;
+}
+
+footer #media img {
+    
+    max-width: 100%;
+    height: auto;
+}

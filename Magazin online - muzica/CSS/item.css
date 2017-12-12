@@ -1,0 +1,90 @@
+main #title {
+    
+    text-align: center;
+}
+
+main div.item > figure img {
+    
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+main div.item > figure > figcaption {
+    
+    text-align: center;
+    display: none;
+}
+
+main div.item > div.description {
+    
+    font-size: 1.1rem;
+}
+
+main div.item > div.description h2 {
+    
+    text-align: center;
+}
+
+main div.item > div.description p {
+    
+    text-align: justify;
+    text-indent: 8%;
+}
+
+main div.item > div.description h2 ~ * {
+    
+    margin-top: 15px;
+}
+
+main div.item > div.description ul {
+    
+    padding-left: 8%;
+}
+
+main div.item > div.description ul li {
+    
+    margin-bottom: 5px;
+    list-style-type: none;
+    position: relative;
+}
+
+main div.item > div.description ul li:before{
+    
+    content: "";
+    height: .4rem;
+    width: .4rem;
+    background: black;
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    left: -1rem;
+    top: 0.5rem;
+}
+
+main div.item > div.description button {
+    
+    display: block;
+    height: 50px;
+    width: 120px;
+    border: 1px solid black;
+    overflow: hidden;
+    background-color: #333;
+    /** **/
+    font-size: 1.1rem;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    /** **/
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+}
+
+main div.item > div.description button:hover {
+    
+    color: red;
+}

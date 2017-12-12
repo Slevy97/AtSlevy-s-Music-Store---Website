@@ -1,0 +1,76 @@
+/** Main CSS **/
+
+main #descriere_firma {
+    
+    display: block;
+    margin: auto;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+main #descriere_firma h2 {
+    
+    text-align: center;
+}
+
+main #descriere_firma p {
+    
+    font-size: 1.1rem;
+    text-align: justify;
+    text-indent: 20px;
+    margin-bottom: 15px;
+    line-height: 1.5rem;
+}
+
+main #descriere_firma h2 + p {
+    
+    margin-top: 20px;
+}
+
+main #inventar_magazin h2 {
+    
+    display: none;
+}
+
+table#inventar {
+    
+    margin: 0 auto;
+}
+
+table#inventar caption {
+    
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+table#inventar, table#inventar td, table#invetar th {
+    
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table#inventar th, table#inventar td {
+    
+    padding: 5px;
+    text-align: center;
+}
+
+table#inventar thead {
+    
+    background-color: #333;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+table#inventar tfoot {
+    
+    background-color: #333;
+    color: white;
+}
+
+table#inventar td:not(#concluzie):hover {
+    
+    background-color: #ddd;
+}
