@@ -206,6 +206,16 @@ main {
     padding-top: 40px;
 }
 
+main #game a {
+	
+	color: black;
+}
+
+main #game a:hover {
+	
+	color: red;
+}
+
 /** Footer CSS **/
 
 footer {
